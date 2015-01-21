@@ -6,23 +6,21 @@
 			<meta charset="utf-8">
 		</head>
 		<body>
-			<div id="header">
+			<div class="header">
 				<h1>Un blog cualquiera</h1>
-					<div class="nav">
-						<ul>
+						<ul class="nav">
 							<li><a href="#">Inicio</a></li>
 							<li><a href="#">Acerca de</a></li>
 							<li><a href="#">Productos</a></li>
 							<li><a href="#">blog</a></li>
 							<li><a href="#">Contáctenos</a></li>
-						</ul>
-					</div><!--nav-->
+						</ul><!--nav-->
 			</div><!--header-->
-			<div id="content">
+			<div class="content">
 				<h2>Articulos relacionados</h2>
-				<span>Un artículo relacionado</span>
-				<span>Otro artículo relacionado</span>
-				<span>Un artículo relacionado más</span>
+				<a>Un artículo relacionado</a>
+				<a>Otro artículo relacionado</a>
+				<a>Un artículo relacionado más</a>
 
 				<div class="info">
 					<h2>World Wide Web</h2>
@@ -33,14 +31,12 @@
 				</div><!--info-->
 			</div><!--content-->
 			<div id="indice">
-				<div class="sub-nav">
 					<h3>Índice</h3>
-						<ol>
+						<ol class="sub-nav">
 							<li><a href="#">Historia</a></li>
 							<li><a href="#">Funcionamiento de la Web</a></li>
 							<li><a href="#">Estandares Web</a></li>
 						</ol>
-				</div><!--sub-nav-->
 				<div class="history">
 					<h2>Historia</h2>
  
@@ -88,15 +84,70 @@
 				<div class="Estandar-web">
 					<h2>Estándares web</h2>
  
-					<span>Destacamos los siguientes estándares:</span>
- 					<ul>
+					<p>Destacamos los siguientes estándares:</p>
+ 					<ul class="sub-lista">
 						<li>el Identificador de Recurso Uniforme (URI), que es un sistema universal para referenciar recursos en la Web, como páginas web,</li>
 						<li>el Protocolo de Transferencia de Hipertexto (HTTP), que especifica cómo se comunican el navegador y el servidor entre ellos,</li>
 						<li>el Lenguaje de Marcado de Hipertexto (HTML), usado para definir la estructura y contenido de documentos de hipertexto,</li>
 						<li>el Lenguaje de Marcado Extensible (XML), usado para describir la estructura de los documentos de texto.</li>
-					</ul> 
+					</ul><!--sub-lista-->
 					<p>Berners Lee dirige desde 2007 el World Wide Web Consortium (W3C), el cual desarrolla y mantiene esos y otros estándares que permiten a los ordenadores de la Web almacenar y comunicar efectivamente diferentes formas de información.</p>
 				</div><!--estandar-web-->
 			</div><!--indice-->
+			<form class="formulario">
+				<h2>Formulario</h2>
+				<label>Nombre</label>
+					<input type="text" name="nombre" value="" placeholder="Nombre"/>
+					<br/>
+				<label>E-mail</label>
+					<input type="text" name="e-mail" value="" placeholder="E-mail"/>
+					<br/>
+				<label>Empresa</label>
+					<input type="text" name="empresa" value="" placeholder="Empresa"/>
+					<br/>
+				<label>Tipo de Solicitud:</label>
+					<input type="radio" name="solicitud" checked="checked"/>Soporte
+					<input type="radio" name="solicitud"/>Contacto General
+					<br/>
+				<select class="país">
+					<option>Seleccione su país:</option>
+					<option>Costa Rica</option>
+					<option>Panamá</option>
+					<option>Estado Unidos</option>
+					<option>Perú</option>
+					<option>Chile</option>
+				</select>
+				<br/>
+				<h3>Ingrese su mensaje:</h3>
+				<textarea class="mensaje"></textarea>
+				<br/>
+				<input type="button" name="Enviar" value="Enviar"/>
+			</form>
+			<!--tabla-->
+			<table>
+				<tr class="datos">
+					<th headers="nombre">Nombre</th>
+					<th headers="puesto">Puesto</th>
+					<th headers="e-mail">E-mail</th>
+				</tr>
+				<br/>
+				<tr>
+					<td headers="nombre">Juan</td>
+					<td headers="puesto">Gerente</td>
+					<td headers="e-mail">juan@gmail.com</td>
+				</tr>
+				<br/>
+				<tr>
+					<td headers="nombre">Jason</td>
+					<td headers="puesto">Soporte</td>
+					<td headers="e-mail">jason@gmail.com</td>
+				</tr>
+				<br/>
+				<tr>
+					<td headers="nombre">Sofia</td>
+					<td headers="puesto">Secretaria</td>
+					<td headers="e-mail">Sofi@gmail.com</td>
+				</tr>
+			</table>
 		</body>
 	</html>
